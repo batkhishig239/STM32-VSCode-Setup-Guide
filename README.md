@@ -29,7 +29,6 @@ Create a dedicated profile for STM32 development. This keeps your STM32 toolchai
 > Профайл үүсгэснээр toolchain болон CMake нь бие биенээ гэмтээхгүй бөгөөд зөвхөн STM32-д зориулагдсан профайлыг хадгалах боломж олгоно.
 
 ![Step 1](images/image1.png)
-![Step 1b](images/image2.png)
 
 ---
 
@@ -38,7 +37,7 @@ Create a dedicated profile for STM32 development. This keeps your STM32 toolchai
 
 Search for and install the **STM32 Extension Pack** from the VS Code Extensions marketplace.
 
-![Step 2](images/image3.png)
+![Step 2](images/image2.png)
 
 ---
 
@@ -50,7 +49,7 @@ Search for and install the **STM32 Extension Pack** from the VS Code Extensions 
 
 > Төсөл хадгалах шинэ хавтас үүсгэ. Хавтас дотроо CMake файлууд болон ARM Clang toolchain-т тохирсон toolchain файлыг байршуул.
 
-![Step 3](images/image4.png)
+![Step 3](images/image3.png)
 
 ---
 
@@ -59,7 +58,7 @@ Search for and install the **STM32 Extension Pack** from the VS Code Extensions 
 
 Go to **File → Open Folder** and select your project folder.
 
-![Step 4](images/image5.png)
+![Step 4](images/image4.png)
 
 ---
 
@@ -70,7 +69,7 @@ When VS Code opens your folder, it will prompt you to install required packages.
 
 > VS Code хавтсыг нээхэд шаардлагатай багцуудыг татаж авахыг асуух бөгөөд зөвшөөрч татаж авна.
 
-![Step 5](images/image6.png)
+![Step 5](images/image5.png)
 
 ---
 
@@ -81,7 +80,7 @@ Plug in your STM32 board via USB. VS Code should automatically detect it.
 
 > VS Code таны STM32 board-ыг автоматаар таних ёстой.
 
-![Step 6](images/image7.png)
+![Step 6](images/image6.png)
 
 ---
 
@@ -93,8 +92,7 @@ Plug in your STM32 board via USB. VS Code should automatically detect it.
 
 > STM32 extension-ийн sidebar руу орно. Дараа нь Configure Project дээр дарж төслийн тохиргоог хийнэ.
 
-![Step 7](images/image8.png)
-![Step 7b](images/image9.png)
+![Step 7](images/image7.png)
 
 ---
 
@@ -105,8 +103,8 @@ Click **Configure**, then select **Debug**. Save the configuration screen that a
 
 > Configure дээр дарж, Debug-ийг сонгоно уу. Үүний дараа энэ дэлгэц гарч ирнэ. Үүнийг хадгална уу.
 
-![Step 8](images/image10.png)
-![Step 8b](images/image11.png)
+![Step 8a](images/image8.png)
+![Step 8b](images/image9.png)
 
 ---
 
@@ -115,9 +113,10 @@ Click **Configure**, then select **Debug**. Save the configuration screen that a
 
 A JSON configuration file will be automatically generated. You do not need to modify it unless you need custom boot/upload behaviour (e.g. auto-reset on upload).
 
-> Энэ JSON файл автоматаар үүсэх бөгөөд тусгай ачаалах командууд тохируулах шаардлагагүй бол өөрчлөх хэрэггүй.
+> Энэ JSON файл автоматаар үүсэх бөгөөд тусгай ачаалах командууд тохируулах шаардлагагүй бол өөрчлөх хэрэггүй. Жишээлбэл, upload хийх үед програмыг автоматаар reset хийх зэрэг тохиргоонуудыг энд хийж болно.
 
-![Step 9](images/image12.png)
+![Step 9a](images/image10.png)
+![Step 9b](images/image11.png)
 
 ---
 
@@ -128,12 +127,23 @@ VS Code will suggest installing the **C/C++ extension** — accept and install i
 
 > Суулгаж дууссаны дараа энэ өргөтгөл нь IntelliSense-ийн C/C++ функцтэй зөрчилдөж болзошгүй тул IntelliSense-ийг идэвхгүй болгоно уу.
 
-![Step 10](images/image13.png)
-![Step 10b](images/image14.png)
+![Step 10a](images/image12.png)
+![Step 10b](images/image13.png)
 
 ---
 
-## You're Ready! / Тохируулга дууслаа! 🎉
+### Step 11 — Setup Complete, Build & Debug
+**Тохируулга дууслаа — Build ба Debug хийх**
+
+Setup is now complete. You can build and debug your project using the shortcuts below.
+
+> Ingэд тохиргоо бүрэн дууслаа. Та одоо төслөө build хийж, debug хийж програмын ажиллагааг шалгах боломжтой.
+
+![Step 11](images/image14.png)
+
+---
+
+## Shortcuts / Товчлол
 
 | Action | Shortcut |
 |--------|----------|
@@ -144,15 +154,11 @@ VS Code will suggest installing the **C/C++ extension** — accept and install i
 
 ## Video Tutorial / Видео заавар
 
-A full video walkthrough is available here:
-
 ▶️ [https://youtu.be/CDqQXCO6F4A?si=kjiiGDa5lexTM1Wq](https://youtu.be/CDqQXCO6F4A?si=kjiiGDa5lexTM1Wq)
 
 ---
 
 ## Related / Холбоотой
-
-Looking for IDE performance benchmarks? Check out the companion repo:
 
 👉 [STM32-GPIO-Toolchain-Benchmark](https://github.com/YOUR_USERNAME/STM32-GPIO-Toolchain-Benchmark)
 
